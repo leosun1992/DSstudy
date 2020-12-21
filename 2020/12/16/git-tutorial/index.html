@@ -229,10 +229,10 @@
             <div class="markdown-body">
               <h1 id="Create-repository"><a href="#Create-repository" class="headerlink" title="Create repository"></a>Create repository</h1><ol>
 <li><p>Create a empty directory.</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br><span class="line"><span class="built_in">cd</span> xxx</span><br><span class="line">mkdir xxx</span><br><span class="line"><span class="built_in">cd</span> xxx</span><br><span class="line"><span class="built_in">pwd</span></span><br></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">pwd</span><br><span class="hljs-built_in">cd</span> xxx<br>mkdir xxx<br><span class="hljs-built_in">cd</span> xxx<br><span class="hljs-built_in">pwd</span><br></code></pre></td></tr></table></figure>
 </li>
 <li><p>Use  <code>git init</code> to initialize a new git repository.</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git inti</span><br></pre></td></tr></table></figure>
+ <figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">git <span class="hljs-built_in">int</span>i<br></code></pre></td></tr></table></figure>
 
 <p> This command will generate a hidden folder named .git, and we can use <code>ls -ah</code> to see it in Terminal.</p>
 </li>
@@ -241,26 +241,26 @@
 <li><p>Put the file under the git directory.</p>
 </li>
 <li><p>Use  <code>git add</code> to add the file to a git.</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add readme.txt</span><br></pre></td></tr></table></figure>
+ <figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs dockerfile">git <span class="hljs-keyword">add</span><span class="bash"> readme.txt</span><br></code></pre></td></tr></table></figure>
 
 <p> No news is good news in Unix.</p>
 </li>
 <li><p>Use <code>git commit</code> to submit the file to the git.</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;message&quot;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">git</span> commit -m <span class="hljs-string">&quot;message&quot;</span><br></code></pre></td></tr></table></figure>
 </li>
 <li><p>The <code>git add</code> and <code>git commit</code> could be used together to add few files and submit them at once.</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add readme.txt</span><br><span class="line">git add readme2.txt</span><br><span class="line">git commit -m &quot;message&quot;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs dockerfile">git <span class="hljs-keyword">add</span><span class="bash"> readme.txt</span><br>git <span class="hljs-keyword">add</span><span class="bash"> readme2.txt</span><br>git commit -m <span class="hljs-string">&quot;message&quot;</span><br></code></pre></td></tr></table></figure>
 
 </li>
 </ol>
 <h1 id="时光机穿梭"><a href="#时光机穿梭" class="headerlink" title="时光机穿梭"></a>时光机穿梭</h1><ol>
 <li>If a modification is made to the file, use <code>git status</code> to see the status of the file in the git.</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line"></span><br><span class="line">On branch master</span><br><span class="line">Changes not staged for commit:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)</span><br><span class="line">  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)</span><br><span class="line"></span><br><span class="line">	modified:   readme.txt</span><br><span class="line"></span><br><span class="line">no changes added to commit (use &quot;git add&quot; and&#x2F;or &quot;git commit -a&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs sql">$ git status<br><br>On branch master<br>Changes not staged for <span class="hljs-keyword">commit</span>:<br>  (<span class="hljs-keyword">use</span> <span class="hljs-string">&quot;git add &lt;file&gt;...&quot;</span> <span class="hljs-keyword">to</span> <span class="hljs-keyword">update</span> what will be committed)<br>  (<span class="hljs-keyword">use</span> <span class="hljs-string">&quot;git checkout -- &lt;file&gt;...&quot;</span> <span class="hljs-keyword">to</span> discard changes <span class="hljs-keyword">in</span> working <span class="hljs-keyword">directory</span>)<br><br>	modified:   readme.txt<br><br><span class="hljs-keyword">no</span> changes added <span class="hljs-keyword">to</span> <span class="hljs-keyword">commit</span> (<span class="hljs-keyword">use</span> <span class="hljs-string">&quot;git add&quot;</span> <span class="hljs-keyword">and</span>/<span class="hljs-keyword">or</span> <span class="hljs-string">&quot;git commit -a&quot;</span>)<br></code></pre></td></tr></table></figure>
 
 <ol start="2">
 <li><p>Use <code>git diff</code> to see the difference between 2 versions.</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff readme.txt</span><br></pre></td></tr></table></figure>
+ <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">git</span> <span class="hljs-selector-tag">diff</span> <span class="hljs-selector-tag">readme</span><span class="hljs-selector-class">.txt</span><br></code></pre></td></tr></table></figure>
 
 <p> The difference is between the <strong>committed version</strong> and <strong>present version in the folder</strong>, whether it is submitted already or not.</p>
 </li>
@@ -271,16 +271,16 @@
 <li>要随时掌握工作区的状态，使用<code>git status</code>命令。</li>
 <li>如果<code>git status</code>告诉你有文件被修改过，用<code>git diff</code>可以查看修改内容。</li>
 </ul>
-<h2 id="Reset-versions"><a href="#Reset-versions" class="headerlink" title="Reset versions"></a>Reset versions</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
+<h2 id="Reset-versions"><a href="#Reset-versions" class="headerlink" title="Reset versions"></a>Reset versions</h2><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 1c">git <span class="hljs-built_in">log</span><br></code></pre></td></tr></table></figure>
 
 <p>To see the history record of committing and their comment.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard head^</span><br></pre></td></tr></table></figure>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">git <span class="hljs-keyword">reset</span> <span class="hljs-comment">--hard head^</span><br></code></pre></td></tr></table></figure>
 
 <p>Head is the current verision, and head^ denotes the last one. Thus, the head^^.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard commit_id(e.g. 1094a)</span><br></pre></td></tr></table></figure>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">git reset --hard commit<span class="hljs-constructor">_id(<span class="hljs-params">e</span>.<span class="hljs-params">g</span>. 1094a)</span><br></code></pre></td></tr></table></figure>
 
 <p>Use head or the commit id to designate which version you want to reset.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reflog</span><br></pre></td></tr></table></figure>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">git <span class="hljs-built_in">ref</span>log<br></code></pre></td></tr></table></figure>
 
 <p>The code is to see commands you made.</p>
 <h3 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h3><p>现在总结一下：</p>
@@ -292,22 +292,22 @@
 <h2 id="Working-directory-and-repository"><a href="#Working-directory-and-repository" class="headerlink" title="Working directory and repository"></a>Working directory and repository</h2><p>Working directory: the directory you can see in finder.</p>
 <p>Repository:can be generally divided into 2 sections, which are stage and branch They are all stored in the hidden folder named .git.</p>
 <p>When you do <code>git add filename</code>, the file is added to stage, and will be transferred to branch aftering doing <code>git commit -m</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff filename</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">git diff filename</span><br></code></pre></td></tr></table></figure>
 
 <p>is used to see the difference between wd and stage.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff cached</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">git diff cached</span><br></code></pre></td></tr></table></figure>
 
 <p>is used to see the diff between stage and branch.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff HEAD -- filename</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">git diff HEAD <span class="hljs-comment">-- filename</span><br></code></pre></td></tr></table></figure>
 
 <p>is to see the diff between wd and branch.</p>
 <h2 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h2><ol>
 <li><p>When the modification is just within the wd, just use</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- filename</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">git checkout <span class="hljs-comment">-- filename</span><br></code></pre></td></tr></table></figure>
 
 <p>to discard the changes you don’t want.</p>
 <p>==In new version git:==</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git restore filename</span><br></pre></td></tr></table></figure>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs dos">git <span class="hljs-built_in">restore</span> filename<br></code></pre></td></tr></table></figure>
 
 
 
@@ -315,11 +315,11 @@
 </ol>
 <ol start="2">
 <li><p>When the changes have been added to the stage and not commited to branch, use</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset HEAD filename</span><br></pre></td></tr></table></figure>
+ <figure class="highlight sas"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sas">git <span class="hljs-meta">reset</span> HEAD <span class="hljs-meta">filename</span><br></code></pre></td></tr></table></figure>
 
 <p> to unstage the changes and put them back to wd. Then, use <code>git checkout -- filename</code> to dropout the changes in wd. </p>
 <p> ==In new version git:==</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git restore --staged filename</span><br></pre></td></tr></table></figure>
+ <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql">git <span class="hljs-keyword">restore</span> <span class="hljs-comment">--staged filename</span><br></code></pre></td></tr></table></figure>
 </li>
 <li><p>When the changes have been committed to branch, refer to reset versions.</p>
 </li>
@@ -329,18 +329,18 @@
 <p>==<code>git restore filename</code>==</p>
 <p>场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令<code>git reset HEAD </code>，就回到了场景1，第二步按场景1操作。==<code>git restore -staged filename</code>==</p>
 <p>场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600/897013573512192">版本回退</a>一节，不过前提是没有推送到远程库。</p>
-<h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm filename</span><br></pre></td></tr></table></figure>
+<h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">git rm filename</span><br></code></pre></td></tr></table></figure>
 
 <p>Use the command is to remove the file from wd(like <code>rm filename</code>), and git rm is like git add, which let the changes pass to stage.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;remove filename&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">git</span> commit -m <span class="hljs-string">&quot;remove filename&quot;</span><br></code></pre></td></tr></table></figure>
 
 <p>Use commit to apply the deleting action to branch, then the file doesn’t exist in wd, stage and branch.</p>
 <p>After <code>git rm</code> or <code>rm</code> is used, and no commit is made, we can use </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- filename</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">git checkout <span class="hljs-comment">-- filename</span><br></code></pre></td></tr></table></figure>
 
 <p><code>git checkout -- filename</code> means to use the version in master to replace the version in wd. The process is much like switching wd to branch version or just dropping the wd version and use the branch version.</p>
 <p>So we can use the restore command when the changes(removes)  just happen in wd:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git restore filename</span><br></pre></td></tr></table></figure>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs dos">git <span class="hljs-built_in">restore</span> filename<br></code></pre></td></tr></table></figure>
 
 <p>to retrieve the version in the branch.</p>
 <h3 id="小结-3"><a href="#小结-3" class="headerlink" title="小结"></a>小结</h3><p>命令<code>git rm</code>用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失<strong>最近一次提交后你修改的内容</strong>。</p>
@@ -353,29 +353,29 @@
 <h1 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h1><p>SSH keys</p>
 <p>public SSH key:id_rsa.pub</p>
 <p>private SSH key:id_rsa</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain"><br></code></pre></td></tr></table></figure>
 
 <p>ssh-keygen -t rsa -C”emailaddress”</p>
 <h2 id="Add-and-Push-remote-repo"><a href="#Add-and-Push-remote-repo" class="headerlink" title="Add and Push remote repo"></a>Add and Push remote repo</h2><ol>
 <li><p>Create a new repo in GH.</p>
 </li>
 <li><p>Use </p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:username&#x2F;reponame.git</span><br></pre></td></tr></table></figure>
+ <figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs dockerfile">git remote <span class="hljs-keyword">add</span><span class="bash"> origin git@github.com:username/reponame.git</span><br></code></pre></td></tr></table></figure>
 
 <p> to create connection between domestic and remote repo.</p>
 </li>
 <li><p>Use</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+ <figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs maxima">git <span class="hljs-built_in">push</span> -u <span class="hljs-built_in">origin</span> master<br></code></pre></td></tr></table></figure>
 
 <p> to push the master to remote origin repo for the first time.</p>
 </li>
 <li><p>Use </p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+ <figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs maxima">git <span class="hljs-built_in">push</span> <span class="hljs-built_in">origin</span> master<br></code></pre></td></tr></table></figure>
 
 <p> to push the master to GH.</p>
 </li>
 </ol>
-<h2 id="Clone-from-remote-repo"><a href="#Clone-from-remote-repo" class="headerlink" title="Clone from remote repo"></a>Clone from remote repo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:username&#x2F;reponame.git</span><br></pre></td></tr></table></figure>
+<h2 id="Clone-from-remote-repo"><a href="#Clone-from-remote-repo" class="headerlink" title="Clone from remote repo"></a>Clone from remote repo</h2><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">git</span>@github.com:username/reponame.git<br></code></pre></td></tr></table></figure>
 
 <h1 id="Branch-management"><a href="#Branch-management" class="headerlink" title="Branch management"></a>Branch management</h1><h2 id="创建并合并分支"><a href="#创建并合并分支" class="headerlink" title="创建并合并分支"></a>创建并合并分支</h2><p>在<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600/897013573512192">版本回退</a>里，你已经知道，每次提交，Git都把它们串成一条时间线，这条时间线就是一个分支。截止到目前，只有一条时间线，在Git里，这个分支叫主分支，即<code>master</code>分支。<code>HEAD</code>严格来说不是指向提交，而是指向<code>master</code>，<code>master</code>才是指向提交的，所以，<code>HEAD</code>指向的就是当前分支。</p>
 <p>一开始的时候，<code>master</code>分支是一条线，Git用<code>master</code>指向最新的提交，再用<code>HEAD</code>指向<code>master</code>，就能确定当前分支，以及当前分支的提交点：</p>
@@ -402,10 +402,10 @@
 <h2 id="Solve-Conflicts"><a href="#Solve-Conflicts" class="headerlink" title="Solve Conflicts"></a>Solve Conflicts</h2><h3 id="小结-4"><a href="#小结-4" class="headerlink" title="小结"></a>小结</h3><p>当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。</p>
 <p>解决冲突就是把Git合并失败的文件手动编辑为我们希望的内容，再提交。</p>
 <p>用<code>git log --graph</code>命令可以看到分支合并图。</p>
-<h2 id="分支管理策略"><a href="#分支管理策略" class="headerlink" title="分支管理策略"></a>分支管理策略</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge branchname</span><br></pre></td></tr></table></figure>
+<h2 id="分支管理策略"><a href="#分支管理策略" class="headerlink" title="分支管理策略"></a>分支管理策略</h2><figure class="highlight cos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cos">git <span class="hljs-keyword">merge</span> branchname<br></code></pre></td></tr></table></figure>
 
 <p>merge默认使用的是FastForward模式，在删除了被合并分支之后是看不出合并历史记录的，可以使用–no–ff记录合并历史：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge --no--ff -m &quot;merge with no-ff&quot; dev</span><br></pre></td></tr></table></figure>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">git</span> merge --<span class="hljs-literal">no</span>--ff -m <span class="hljs-string">&quot;merge with no-ff&quot;</span> dev<br></code></pre></td></tr></table></figure>
 
 <p>因为本次合并要创建一个新的commit，所以加上<code>-m</code>参数，把commit描述写进去。</p>
 <p>使用这种模式，再用<code>git log</code>就可以看到分支合并历史。</p>
@@ -414,11 +414,11 @@
 <h3 id="小结-5"><a href="#小结-5" class="headerlink" title="小结"></a>小结</h3><p>Git分支十分强大，在团队开发中应该充分应用。</p>
 <p>合并分支时，加上<code>--no-ff</code>参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而<code>fast forward</code>合并就看不出来曾经做过合并。</p>
 <h2 id="Bug-Branch"><a href="#Bug-Branch" class="headerlink" title="Bug Branch"></a>Bug Branch</h2><p>查看stash有多少个场景：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash list</span><br></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">git stash list</span><br></code></pre></td></tr></table></figure>
 
 <p>同样的bug，要在dev上修复，我们只需要把<code>4c805e2 fix bug 101</code>这个提交所做的修改“复制”到dev分支。注意：我们只想复制<code>4c805e2 fix bug 101</code>这个提交所做的修改，并不是把整个master分支merge过来。</p>
 <p>为了方便操作，Git专门提供了一个<code>cherry-pick</code>命令，让我们能复制一个特定的提交到当前分支：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git cherry-pick &lt;commit id&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs applescript">git cherry-pick &lt;commit <span class="hljs-built_in">id</span>&gt;<br></code></pre></td></tr></table></figure>
 
 <p>Git自动给dev分支做了一次提交，注意这次提交的commit是<code>1d4b803</code>，它并不同于master的<code>4c805e2</code>，因为这两个commit只是改动相同，但确实是两个不同的commit。用<code>git cherry-pick</code>，我们就不需要在dev分支上手动再把修bug的过程重复一遍。</p>
 <h3 id="小结-6"><a href="#小结-6" class="headerlink" title="小结"></a>小结</h3><p>修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；</p>
@@ -456,7 +456,7 @@
 </ul>
 <h1 id="Pull-Request"><a href="#Pull-Request" class="headerlink" title="Pull Request"></a>Pull Request</h1><ol>
 <li><p>首先Fork该项目，会在你的github账号下克隆了一个远程账户，然后从自己账号下的仓库clone到local：</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:username&#x2F;reponame.git</span><br></pre></td></tr></table></figure>
+ <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">git</span>@github.com:username/reponame.git<br></code></pre></td></tr></table></figure>
 
 <p> 如果是别人的项目，就要先fork一个到自己的账号下，然后clone到本地，这样之后push的时候才会有权限，不然直接从别人的repo clone的话，是无法push的。</p>
 </li>
@@ -468,10 +468,10 @@
 <li><code>.gitignore</code>文件本身要放到版本库里，并且可以对<code>.gitignore</code>做版本管理</li>
 </ul>
 <h2 id="配置别名"><a href="#配置别名" class="headerlink" title="配置别名"></a>配置别名</h2><p>我们只需要敲一行命令，告诉Git，以后<code>st</code>就表示<code>status</code>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global alias.st status</span><br></pre></td></tr></table></figure>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs verilog">$ git <span class="hljs-keyword">config</span> --<span class="hljs-keyword">global</span> <span class="hljs-keyword">alias</span><span class="hljs-variable">.st</span> status<br></code></pre></td></tr></table></figure>
 
 <p>甚至还有人丧心病狂地把<code>lg</code>配置成了：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global alias.lg &quot;log --color --graph --pretty&#x3D;format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs perl">git config --global alias.lg <span class="hljs-string">&quot;log --color --graph --pretty=format:&#x27;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#x27; --abbrev-commit&quot;</span><br></code></pre></td></tr></table></figure>
 
 
             </div>
@@ -479,6 +479,13 @@
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/git/">git</a>
+                    
+                  </div>
                 
               </div>
               
@@ -488,6 +495,12 @@
                 <div class="post-prevnext row">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2020/12/21/SQL-note/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">SQL note</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
