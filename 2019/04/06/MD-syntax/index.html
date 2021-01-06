@@ -1,0 +1,530 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar.png">
+  <link rel="icon" type="image/png" href="/img/avatar.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="Fan">
+  <meta name="keywords" content="data science, sql, python">
+  <title>Markdown syntax - Fan</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"leosun1992.github.io","root":"/","version":"1.8.6","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"copy_btn":true,"image_zoom":{"enable":true},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Fan</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Markdown syntax">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2019-04-06 12:43" pubdate>
+        2019年4月6日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      641 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      12
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Markdown syntax</h1>
+            
+            <div class="markdown-body">
+              <h1 id="Summary-of-md-syntax"><a href="#Summary-of-md-syntax" class="headerlink" title="Summary of md syntax"></a>Summary of md syntax</h1><h2 id="Block-Elements"><a href="#Block-Elements" class="headerlink" title="Block Elements"></a>Block Elements</h2><h3 id="Paragraphs-and-Line-Breaks"><a href="#Paragraphs-and-Line-Breaks" class="headerlink" title="Paragraphs and Line Breaks"></a>Paragraphs and Line Breaks</h3><p>When you do want to insert a <code>&lt;br/&gt;</code> break tag using md, you end a line with 2 or more spaces, then type return.</p>
+<p><code># first-leve header</code></p>
+<p><code>## second-level header</code></p>
+<p>In strict mode, <strong>a space</strong> should be typed between the hash mark and header.</p>
+<h3 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h3><p>A space should be typed after &gt; to realize quotations:</p>
+<p><code>&gt; quote</code>  </p>
+<p>Add additional levels of &gt; to realize nested blockquotes:   </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plain">&gt; quote<br>&gt;<br>&gt;&gt; nested quote<br>&gt;<br>&gt; back to the first level<br></code></pre></td></tr></table></figure>
+
+<p>Blockquotes could contain other elements in MD, including headers lists and code blocks:  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plain">&gt; # header<br>&gt;<br>&gt; 1. first list item<br>&gt; 2. second list item  <br>&gt; <br>&gt; Here&#39;s some example code:<br>&gt; <br>&gt; 	return shell_exec(&quot;echo $input | $markdown_script&quot;);<br></code></pre></td></tr></table></figure>
+
+<h3 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h3><p>A space should be put after * asterisk, - dash or hyphen + plus:  </p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">*</span> Red<br><br><span class="hljs-bullet">-</span> Green<br><br><span class="hljs-bullet">+</span> Blue<br></code></pre></td></tr></table></figure>
+
+<p>The actual numbers you use to mark the list have no effect on the HTML output:  </p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> Bird<br><span class="hljs-bullet">2.</span> Parish<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> a<br><span class="hljs-bullet">1.</span> b<br></code></pre></td></tr></table></figure>
+
+<p>To put a blockquote within a list item, the blockquote’s &gt; delimiters need to be indented:  </p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver">- A list <span class="hljs-keyword">item</span> <span class="hljs-keyword">with</span> <span class="hljs-keyword">a</span> blockquote:<br><br>	&gt; this is <span class="hljs-keyword">a</span> blockquote<br>	&gt; inside <span class="hljs-keyword">a</span> list <span class="hljs-keyword">item</span>.<br></code></pre></td></tr></table></figure>
+
+<p>To put a code block within a list item, the code block needs to be indented twice or indented once and wrapped in backticks:  </p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver">- A list <span class="hljs-keyword">item</span> <span class="hljs-keyword">with</span> <span class="hljs-keyword">a</span> code block:<br>	`print`<br></code></pre></td></tr></table></figure>
+
+<p><em>Summary: Elements need to be indented if we want to put them with in a list item.</em>  </p>
+<p>If the number-period-space sequence at the beginning of a line, we could backslash-escape it, and MD will generate the literal characters:  </p>
+<p><code>1986. what a great season.</code></p>
+<p><code>1986\. what a great season.</code></p>
+<h3 id="Code-Blocks"><a href="#Code-Blocks" class="headerlink" title="Code Blocks"></a>Code Blocks</h3><p>Use `` or ``` ``` to produce a code block.  </p>
+<p>When use ``` ```, the language name should subsequce, and the code will be typed in the next line.  </p>
+<p>Tab with 4 spaces will do it too.  </p>
+<h3 id="Horizontal-Rules"><a href="#Horizontal-Rules" class="headerlink" title="Horizontal Rules"></a>Horizontal Rules</h3><p>Use more than 3 asterisks, hyphens, pluses or underscores to produce a horizontal rule tag.  </p>
+<h2 id="Span-Elements"><a href="#Span-Elements" class="headerlink" title="Span Elements"></a>Span Elements</h2><p>Link texts is delimited by square bracket, and a set of regular parentheses is followed with URL in it:  </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-attr">[an example]</span>(<span class="hljs-selector-tag">www</span><span class="hljs-selector-class">.baidu</span><span class="hljs-selector-class">.com</span>/&quot;<span class="hljs-selector-tag">baidu</span>&quot;)<br><span class="hljs-selector-tag">or</span> <span class="hljs-selector-tag">use</span> <span class="hljs-selector-tag">Command</span> <span class="hljs-selector-tag">K</span><br></code></pre></td></tr></table></figure>
+
+<p>Or use a second set of square brackets,  inside which you place a label, and you can define the link label anywhere in the document:  </p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs awk">[example][id]<br>[id]: http:<span class="hljs-regexp">//</span>baidu.com/	<span class="hljs-string">&quot;Optional Title&quot;</span><br>[id]: http:<span class="hljs-regexp">//</span>baidu.com/	<span class="hljs-string">&quot;Optional Title&quot;</span><br>[id]: http:<span class="hljs-regexp">//</span>baidu.com/	<span class="hljs-string">&quot;Optional Title&quot;</span><br>[id]: &lt;http:<span class="hljs-regexp">//</span>baidu.com/&gt;	<span class="hljs-string">&quot;Optional Title&quot;</span><br></code></pre></td></tr></table></figure>
+
+<figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs prolog">visit [<span class="hljs-symbol">Google</span>][<span class="hljs-symbol">Google</span>] for more information.<br>[<span class="hljs-symbol">Google</span>]: http://google.com	<span class="hljs-string">&quot;Google&quot;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="Annotation"><a href="#Annotation" class="headerlink" title="Annotation"></a>Annotation</h3><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs crystal">text[^<span class="hljs-number">10</span>]<br>[^<span class="hljs-number">10</span>]: <span class="hljs-keyword">annotation</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs cmake">**Bold** 	<span class="hljs-keyword">Command</span> B<br>*Italics*	<span class="hljs-keyword">Command</span> I<br>==Highlight==	Shift <span class="hljs-keyword">Command</span> H <br>~Underline~ <span class="hljs-keyword">Command</span> U<br>~~strikethrough~~	Ctrl Shift `<br></code></pre></td></tr></table></figure>
+
+<h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><p>A single backtick in a code span: <code>`</code>  </p>
+<figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs fortran"><span class="hljs-keyword">use</span> the `<span class="hljs-built_in">print</span>()` <span class="hljs-function"><span class="hljs-keyword">function</span></span><br></code></pre></td></tr></table></figure>
+
+<p>Backticks, angle brackets, ampersands, hash marks can be literally produced within a code span wrapped by a set of backticks.  </p>
+<h3 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h3><p>2 styles,like web links: inline and reference:  </p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs xquery">![<span class="hljs-type">text</span>]<span class="hljs-built_in">(path</span> <span class="hljs-keyword">to</span> img)<br><br>![<span class="hljs-type">text</span>]<span class="hljs-built_in">[id</span>]<br><span class="hljs-built_in">[id</span>]:<span class="hljs-built_in"> path</span> <span class="hljs-keyword">to</span> img<br><br><span class="hljs-keyword">or</span> use Shift Command I<br></code></pre></td></tr></table></figure>
+
+<p>Use regular HTML <code>&lt;img&gt;</code> tags to specify the dimensions of images.  </p>
+<h2 id="Miscellaneous"><a href="#Miscellaneous" class="headerlink" title="Miscellaneous"></a>Miscellaneous</h2><h3 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h3><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs gherkin">|<span class="hljs-string">1</span>|<span class="hljs-string">2</span>|<span class="hljs-string">3</span>|<br>|<span class="hljs-string">---</span>|<span class="hljs-string">---</span>|<span class="hljs-string">---</span>|<br>|<span class="hljs-string">4</span>|<span class="hljs-string">5</span>|<span class="hljs-string">6</span>|<br></code></pre></td></tr></table></figure>
+
+<p>Or use Option(alt)  Command T.  </p>
+<p>If you want to shouw the actually text of a URL or email address, and also have it be a clickable link, use a set of angle bracket to surround it.  </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;<span class="hljs-selector-tag">www</span><span class="hljs-selector-class">.google</span><span class="hljs-selector-class">.com</span>&gt;<br>&lt;<span class="hljs-selector-tag">xxx</span><span class="hljs-keyword">@xxx</span>.com&gt;<br></code></pre></td></tr></table></figure>
+
+<h3 id="Backslash-Escapes"><a href="#Backslash-Escapes" class="headerlink" title="Backslash Escapes"></a>Backslash Escapes</h3><p>Use backslash escapes to generate literal characters which would otherwise have special meaning in Markdown’s formatting syntax.  </p>
+<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs livescript"><span class="hljs-string">\*literal</span> asterisk<span class="hljs-string">\*</span><br></code></pre></td></tr></table></figure>
+
+<p>Character below can use the backslash escape rule.  </p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm">\ <span class="hljs-keyword">backslash</span><br><span class="hljs-keyword">` </span><span class="hljs-keyword">backtick</span><br><span class="hljs-keyword">* </span>asterisk<br>_ underscore<br>&#123;&#125; curly <span class="hljs-keyword">braces</span><br><span class="hljs-keyword">[] </span>sqace <span class="hljs-keyword">brackets</span><br><span class="hljs-keyword">() </span>parentheses<br><span class="hljs-comment"># hash mark</span><br>+ plus sign<br>- dash, hyphen, minus sign<br>. dot<br>! exclamation mark<br></code></pre></td></tr></table></figure>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/markdown/">markdown</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/05/16/Git_note/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Git Note</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    Fluid.utils.waitElementVisible('vcomments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "wHn9LGVCGYo8m3zY5PCoBxg2-gzGzoHsz",
+          app_key: "Fcvbj8NkTWtAom5GTP18zRbU",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":200})
+    NProgress.start()
+    document.addEventListener('DOMContentLoaded', function() {
+      window.NProgress && window.NProgress.inc();
+    })
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>
