@@ -80,6 +80,25 @@
   
   
   <entry>
+    <title>Miscellaneous-keep updating</title>
+    <link href="/2020/03/07/Miscellaneous/"/>
+    <url>/2020/03/07/Miscellaneous/</url>
+    
+    <content type="html"><![CDATA[<h2 id="conda下载太慢"><a href="#conda下载太慢" class="headerlink" title="conda下载太慢"></a>conda下载太慢</h2><p>修改镜像，添加清华提供的镜像</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs awk">conda config --add channels https:<span class="hljs-regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="hljs-regexp">/anaconda/</span>pkgs<span class="hljs-regexp">/free/</span><br><br>conda config --set show_channel_urls yes<br></code></pre></td></tr></table></figure><h2 id="brew安装极慢，-iTerm2设置代理解决速度问题。"><a href="#brew安装极慢，-iTerm2设置代理解决速度问题。" class="headerlink" title="brew安装极慢， iTerm2设置代理解决速度问题。"></a>brew安装极慢， iTerm2设置代理解决速度问题。</h2><p>我自己用的是zsh，修改配置文件 .zshrc</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs routeros">$ vim ~/.zshrc<br><span class="hljs-comment"># proxy</span><br><span class="hljs-builtin-name">export</span> <span class="hljs-attribute">http_proxy</span>=http://127.0.0.1:端口<br><span class="hljs-builtin-name">export</span> <span class="hljs-attribute">https_proxy</span>=<span class="hljs-variable">$http_proxy</span><br>$ source ~/.zshrc<br></code></pre></td></tr></table></figure><p>端口为你的代理软件的http端口</p><p>测试IP：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-variable">$</span>  <span class="hljs-built_in">curl</span> ip.sb<br></code></pre></td></tr></table></figure><h2 id="ssh方式cloneGithub项目到本地"><a href="#ssh方式cloneGithub项目到本地" class="headerlink" title="ssh方式cloneGithub项目到本地"></a>ssh方式cloneGithub项目到本地</h2><p>vim修改本机的 ~/.ssh/config，给里面添加一条记录。</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">vi</span> ~/<span class="hljs-selector-class">.ssh</span>/<span class="hljs-selector-tag">config</span><br><span class="hljs-selector-tag">Host</span> <span class="hljs-selector-tag">github</span><span class="hljs-selector-class">.com</span><br>  <span class="hljs-selector-tag">ProxyCommand</span> <span class="hljs-selector-tag">nc</span> <span class="hljs-selector-tag">-v</span> <span class="hljs-selector-tag">-x</span> 127.0.0.1<span class="hljs-selector-pseudo">:sock</span>端口号 %<span class="hljs-selector-tag">h</span> %<span class="hljs-selector-tag">p</span><br></code></pre></td></tr></table></figure><p>然后:wq保存退出，现在可以看结果了。</p><h2 id="jupyter-notebook-python2-3环境切换"><a href="#jupyter-notebook-python2-3环境切换" class="headerlink" title="jupyter notebook python2 3环境切换"></a>jupyter notebook python2 3环境切换</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql">ipython kernel <span class="hljs-keyword">install</span> <span class="hljs-comment">--name python2  </span><br>ipython kernel <span class="hljs-keyword">install</span> <span class="hljs-comment">--name python3 </span><br></code></pre></td></tr></table></figure><h2 id="消除Macos程序坞自动隐藏时间"><a href="#消除Macos程序坞自动隐藏时间" class="headerlink" title="消除Macos程序坞自动隐藏时间"></a>消除Macos程序坞自动隐藏时间</h2><p>在设置-程序坞里设置自动显示和隐藏后，在terminal里输入：</p><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">defaults <span class="hljs-built_in">write</span> com.apple.Dock autohide-<span class="hljs-built_in">delay</span> -<span class="hljs-keyword">float</span> <span class="hljs-number">0</span> &amp;&amp; killall Dock<br></code></pre></td></tr></table></figure><p>想要还原默认的隐藏速度：</p><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">defaults <span class="hljs-keyword">delete</span> com.apple.Dock autohide-<span class="hljs-built_in">delay</span> &amp;&amp; killall Dock<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>terminal</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Markdown syntax</title>
     <link href="/2019/04/06/MD-syntax/"/>
     <url>/2019/04/06/MD-syntax/</url>
